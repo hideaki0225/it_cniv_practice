@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>授業</title>
+
+        <script>
+            function calc() {
+                let num1 = document.getElementById("left").value;
+                let num2 = document.getElementById("right").value;
+                //document.formのname.textのname.value
+                //let num2 = parseFloat(document.cal.right.value);
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                console.log(num1+num2);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="cal">
+            値１<input id="left" type="text" name="left"><br>
+            値２<input id="right" type="text" name="right"><br>
+            <input type="button" name="sb" value="計算" onclick="calc()">
+        </form>
+    </body>
+</html>
